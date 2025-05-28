@@ -1,11 +1,16 @@
 ---
 title: CLI Usage Reference
-description: Thee command-line interface tool for Koii
+description: The command-line interface tool for Koii
 image: img/thumbnail.png
 sidebar_label: CLI Usage Reference
 ---
 
-## Install Koii CLI
+## Overview
+
+The Koii CLI is a powerful command-line tool that allows you to interact with the K2 network. This reference guide covers the most commonly used commands and their options.
+
+## Installation
+
 Check [here](/develop/command-line-tool/koii-cli/install-cli) to learn about how to install the Koii CLI.
 
 After installing the Koii CLI, you can use the following commands to interact with the K2.
