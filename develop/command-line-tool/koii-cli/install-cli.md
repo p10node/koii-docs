@@ -11,6 +11,17 @@ import Description from "@site/src/components/description";
   text="To interact with the K2 locally, you need to install the Koii CLI. The Koii CLI provides a set of valuable features, including:Generating a Koii wallet,Running Koii test validator."
 /> -->
 
+## Prerequisites
+
+Before installing the Koii CLI, ensure you have:
+- A stable internet connection
+- Administrator/sudo privileges
+- For Windows: Windows 10 or later
+- For MacOS: macOS 10.15 or later
+- For Linux: Ubuntu 20.04+, Debian 10+, or equivalent
+
+## Overview
+
 To interact with the K2 network locally, you must install the Koii CLI. The Koii CLI is equipped with a range of essential features, such as:
 
 1. Generating a Koii wallet: With the Koii CLI, you can easily create a wallet specifically designed for Koii interactions.
@@ -19,9 +30,7 @@ To interact with the K2 network locally, you must install the Koii CLI. The Koii
 
 By using the Koii CLI, you can seamlessly interact with the K2 network within your local development environment, empowering you to build and test your applications efficiently.
 
-The KOII CLI can be installed in various ways based on your operating system:
-
-# MacOS & Linux
+# MacOS & Linux Installation
 
 1. Open your terminal and execute the following command:
 
@@ -39,15 +48,27 @@ Please update your PATH environment variable to include the koii programs:
 
 If you encounter this message, proceed to the next step. Otherwise, move on to step 4.
 
-3. Copy and run the command provided below the prompt. This command will update your `PATH` environment variable to include the Koii programs.
+3. Update your PATH environment variable:
 
-4. To confirm that your `PATH` environment variable has been successfully updated, run the following command:
+   For Bash users:
+   ```sh
+   echo 'export PATH="$HOME/.local/share/koii/install/active_release/bin:$PATH"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+   For Zsh users:
+   ```sh
+   echo 'export PATH="$HOME/.local/share/koii/install/active_release/bin:$PATH"' >> ~/.zshrc
+   source ~/.zshrc
+   ```
+
+4. To confirm that your `PATH` environment variable has been successfully updated, run:
 
 ```sh
 echo $PATH
 ```
 
-5. To confirm that the Koii CLI was successfully installed, run the following command:
+5. Verify the installation by running:
 
 ```sh
 koii --version
@@ -59,93 +80,92 @@ You should see the version information similar to this:
 koii-cli 1.16.2
 ```
 
-By default, RPC will be configured to the testnet. 
-
-To begin using mainnet, use:
-```
-koii config set --url https://mainnet.koii.network/
-```
-
-# Windows
+# Windows Installation
 
 1. Open a Command Prompt (cmd.exe) as an Administrator:
+   - Press Windows key
+   - Type "Command Prompt" (or cmd)
+   - Right-click and select "Run as administrator"
+   - Click "Yes" if prompted by User Account Control
 
-   - In the Windows search bar, type "Command Prompt."
-   - When the Command Prompt app appears, right-click on it and select "Open as Administrator."
-   - If a pop-up window asks, "Do you want to allow this app to make changes to your device?," click "Yes."
-
-2. Download the Koii installer into a temporary directory:
-
-   - Copy and paste the following command into the Command Prompt, then press Enter:
-
-     ```sh
-     cmd /c "curl -L https://github.com/koii-network/k2-release/releases/download/v1.16.2/koii-install-init-x86_64-pc-windows-msvc.exe --output C:\koii-install-tmp\koii-install-init.exe --create-dirs"
-     ```
-
-     <!-- TODO: Can we use a URL redirect so we don't need to keep updating the version in the docs? -->
-
-     :::tip
-     - If the above step doesn't work, you can manually download the .exe program from this URL: (https://github.com/koii-network/k2-release/releases/download/v1.16.2/koii-install-init-x86_64-pc-windows-msvc.exe).
-     - Your browser may display a warning about the file being potentially harmful. Please accept to keep the file.
-     - After downloading, copy and paste the downloaded file to the location `C:\koii-install-tmp\` and rename it to "koii-install-init.exe."
-       :::
-
-3. Install the latest version of the Koii CLI:
-
-   - Copy and paste the following command into the Command Prompt, then press Enter.
-
-   ```
-   C:\koii-install-tmp\koii-install-init.exe v1.16.2
+2. Create a temporary directory and download the installer:
+   ```sh
+   mkdir C:\koii-install-tmp
+   cd C:\koii-install-tmp
+   curl -L https://github.com/koii-network/k2-release/releases/latest/download/koii-install-init-x86_64-pc-windows-msvc.exe --output koii-install-init.exe
    ```
 
-   - If your system displays a security pop-up, select "Allow" to run the program.
+   :::tip Alternative Download
+   If the above command doesn't work:
+   1. Visit the [latest release page](https://github.com/koii-network/k2-release/releases/latest)
+   2. Download `koii-install-init-x86_64-pc-windows-msvc.exe`
+   3. Move it to `C:\koii-install-tmp\koii-install-init.exe`
+   :::
 
-4. Wait for the installer to complete, and then press Enter.
+3. Run the installer:
+   ```sh
+   koii-install-init.exe
+   ```
+   - If Windows Defender or antivirus blocks the installation, click "More info" and then "Run anyway"
 
-5. Close the Command Prompt window and open a new one as a normal user.
+4. Close the current Command Prompt and open a new one as a normal user
 
-6. To confirm that the Koii CLI was successfully installed, run the following command:
-
+5. Verify the installation:
    ```sh
    koii --version
    ```
 
-   - You should see the version information similar to this:
+# Configuration
 
-     ```sh
-     koii-cli 1.16.2
-     ```
+After installation, you need to configure your RPC endpoint:
 
-### **Additional Steps for Mac Users**
-
-Mac users may encounter issues with the Koii CLI not working in a new terminal session. To resolve this, follow these steps:
-
-1. After installing the Koii CLI, copy the `PATH` value.
-
-2. In your terminal, run the command
-
-```sh
-vi ~/.zshrc
-```
-
-3. This will open the `~/.zshrc` file in the vi text editor. Insert the following line, replacing `<path>` with the copied `PATH` value:
-
+1. For Testnet (default):
    ```sh
-   export <path>
+   koii config set --url https://testnet.koii.network
    ```
 
-   This line will add the Koii CLI path to your shell configuration.
+2. For Mainnet:
+   ```sh
+   koii config set --url https://mainnet.koii.network
+   ```
 
-4. Save and exit the editor. You can do this by pressing the Esc key, typing `:wq`, and then pressing Enter.
+# Troubleshooting
 
-5. Now, the Koii CLI should work correctly in any new terminal session.
+## Common Issues
 
-## After installing the cli
-Set the **testnet rpc endpoint** correctly
-Run this command:
+1. **Command not found after installation**
+   - Ensure you've added the PATH to your shell configuration file
+   - Restart your terminal
+   - For Windows, ensure you're running as a normal user, not administrator
+
+2. **Permission denied errors**
+   - For MacOS/Linux: Run `chmod +x ~/.local/share/koii/install/active_release/bin/koii`
+   - For Windows: Run Command Prompt as administrator
+
+3. **Antivirus blocking installation**
+   - Temporarily disable antivirus
+   - Add an exception for the Koii installation directory
+
+## Updating the CLI
+
+To update to the latest version:
 
 ```sh
-koii config set --url https://mainnet.koii.network
+koii-install update
 ```
 
-Feel free to [reach out](https://discord.com/invite/koii-network) if you have any further questions or need assistance.
+## Uninstallation
+
+To remove the Koii CLI:
+
+1. MacOS/Linux:
+   ```sh
+   rm -rf ~/.local/share/koii
+   ```
+
+2. Windows:
+   ```sh
+   rmdir /s /q %USERPROFILE%\.local\share\koii
+   ```
+
+Need help? Join our [Discord community](https://discord.com/invite/koii-network) for support.

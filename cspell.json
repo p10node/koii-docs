@@ -108,7 +108,9 @@
     "unbiasable",
     "bitvector",
     "Rustc",
-    "Metaplex"
+    "Metaplex",
+    "gatekeeping",
+    "Litepaper"
   ],
   "caseSensitive": false,
   "flagWords": ["hte"],
