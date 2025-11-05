@@ -13,7 +13,7 @@ text="This section will provide information on how and where your tasks can stor
 ## Where Will the Linktree Data Be Stored?
 
 Since Koii tasks run on a distributed network of nodes, each node stores a copy of the entire database **locally**, including all the data associated with a specific Linktree.
-The goal of building on Koii Network is to distribute the storage and processing of data across the network, rather than relying on a centralized authority or database. We
+The goal of building on Koii is to distribute the storage and processing of data across the network, rather than relying on a centralized authority or database. We
 need a module to manage the database.
 
 In the Linktree task, this module is called `db_model.js`. It manages three different object types, which include:
@@ -34,7 +34,7 @@ For the Linktree data, we have the following functions:
 
 Let’s look at the `getLinktree` function as an example and see how it is implemented:
 
-```javascript
+```js
 const getLinktree = async (publicKey) => {
   return new Promise((resolve, reject) => {
     namespaceWrapper.levelDB.get(getLinktreeId(publicKey), (err, value) => {
@@ -65,7 +65,7 @@ For the proofs, we have the following functions:
 
 Let’s look at the `getProofs` function as an example and see how it is implemented:
 
-```javascript
+```js
 const getProofs = async (pubkey) => {
   return new Promise((resolve, reject) => {
     namespaceWrapper.levelDB.get(getProofsId(pubkey), (err, value) => {
@@ -89,7 +89,7 @@ For the authentication list, we have the following functions:
 - `getAllAuthLists()`
 - `getAuthListId()`
 
-```javascript
+```js
 const getAuthList = async (pubkey) => {
   return new Promise((resolve, reject) => {
     namespaceWrapper.levelDB.get(getAuthListId(pubkey), (err, value) => {

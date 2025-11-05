@@ -31,8 +31,6 @@ const sidebars = {
     },
     "the-koii-token/network-economics",
     "the-koii-token/tokenomics/token-generation",
-    "the-koii-token/tokenomics/supply-reduction",
-    "the-koii-token/tokenomics/reputation-hardening",
     "ways-to-get-koii/compute-sharing-marketplace/compute-sharing-marketplace",
 
     {
@@ -50,13 +48,29 @@ const sidebars = {
     "ways-to-get-koii/run-a-node",
     "ways-to-get-koii/attention-mining",
 
+    // {
+    //   type: "html",
+    //   value: "Become an Early Adopter",
+    //   className: "sidebar-title top-margin",
+    // },
+    // "early-adopters/ambassador-program",
+    // "ways-to-get-koii/grants-program",
     {
       type: "html",
-      value: "Become an Early Adopter",
+      value: `
+        <a href="/koii/the-koii-token/add-koii-to-exchange/introduction" style="text-decoration: none; color: inherit; padding-left: 0; margin-left: 0; font-weight: 600">
+          Add $KOII to an Exchange
+        </a>
+      `,
       className: "sidebar-title top-margin",
     },
-    "early-adopters/ambassador-program",
-    "ways-to-get-koii/grants-program",
+    "the-koii-token/add-koii-to-exchange/node-setup",
+    "the-koii-token/add-koii-to-exchange/managing-transactions",
+    "the-koii-token/add-koii-to-exchange/prioritization-fees",
+    "the-koii-token/add-koii-to-exchange/kpl-tokens",
+    "the-koii-token/add-koii-to-exchange/offline-signing",
+    "the-koii-token/add-koii-to-exchange/durable-transaction-nonces",
+    "the-koii-token/add-koii-to-exchange/testing",
   ],
 };
 

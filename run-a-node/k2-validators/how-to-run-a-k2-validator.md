@@ -8,26 +8,13 @@ sidebar_label: How to Run a K2 Validator
 import Description from "@site/src/components/description";
 import Tooltip from "@site/src/components/tooltip";
 
-# Running a K2 Validator
+![Banner](/img/run-a-node/run-k2-node.svg)
 
-<Description
-  text="This section describes how to run a K2 Validator."
-/>
-
-![Banner](./img/Running%20a%20K2%20Node.svg)
-:::warning
-
-Our validators are currently under maintenance. Running a validator is not recommended at this time. Please wait for further instructions. Thank you for your patience.
-
-:::
 :::info
 
-This guide is only for version 1.14.19 of our validators which are running on our test net: testnet.koii.network
+This guide is only for version 1.16.6 of our validators which are running on mainnet: mainnet.koii.network
 
-:::
-:::info
-
-At this time we only support Ubuntu 20.04 LTS.
+At this time we support Ubuntu 20, 22, and 24.
 
 :::
 

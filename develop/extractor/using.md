@@ -10,7 +10,7 @@ To modify the extractor query, or change how it uses the local database, check o
 
 The `query` object passes the fundamental instructions to our extractor.
 
-```javascript
+```js
 let searchTerm = "#koii";
 let query = {
     limit: 100, // total number of records to return
@@ -31,7 +31,9 @@ One of the files that you will find useful is the `test-one-round.js`. This test
 
 You can run it with:
 
-`node test/test-one-round.js`
+```sh
+node test/test-one-round.js
+```
 
 ## Interacting with Task Runners
 
@@ -43,17 +45,12 @@ Your task runners will populate this via Koii Node. We need the following:
 
 - Twitter Username
 - Twitter Password
-- Spheron storage token
 
-_A Spheron Storage Token is required from the task-runner as it is used to upload data to the InterPlanetary File System protocol._
 
 #### Task Id:
 
 Do not provide a `task_id` for the first deployment, as it will be assigned automatically when you create your task.
 
-#### Secret Spheron Storage Key:
-
-Be sure to provide a `secret_spheron_storage_key`, we are using the IPFS to deploy our application; we need a storage space for it.
 
 #### Other Variables:
 

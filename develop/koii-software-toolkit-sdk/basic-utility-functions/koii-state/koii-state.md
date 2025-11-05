@@ -19,7 +19,7 @@ This function gets the attention contract ID running on the bundler.
 
 ### Example Code
 
-```javascript
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 
@@ -33,7 +33,7 @@ testGetAttentionId();
 
 ### Example Code Output
 
-```
+```sh
 Initialized Koii Tools for true ownership and direct communication using version QA7AIFVx1KBBmzC7WUNhJbDsHlSJArUT0jWrhZMZPS8
 attentionContractID : NwaSMGCdz6Yu5vNjlMtCNBmfEkjYfT-dfYkbQQDGn5s
 ```
@@ -45,14 +45,14 @@ attentionContractID : NwaSMGCdz6Yu5vNjlMtCNBmfEkjYfT-dfYkbQQDGn5s
 ## getKoiiState
 
 :::danger
-The states are based on Arweave and K1. Know more about K2 [here](/develop/settlement-layer/k2-tick-tock-fast-blocks)
+The states are based on Arweave and K1. Know more about K2 [here](/concepts/settlement-layer/k2-tick-tock-fast-blocks)
 :::
 
 This endpoint returns the state of Koii. Balances, stakes, Koii tasks and all the other information can be programmatically accessed through this endpoint.
 
 ### Example Code
 
-```jsx
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 
@@ -66,10 +66,10 @@ testGetKoiiState();
 
 ### Example Code Output
 
-![This will be a large file output.](../../img//attention.PNG)
+![This will be a large file output.](/img/develop/koii-sdk/attention.png)
 
 :::info
-&#x20;You can alternatively also visit [https://mainnet.koii.live/state](https://mainnet.koii.live/state) to check the Koii State.
+You can alternatively also visit [https://mainnet.koii.live/state](https://mainnet.koii.live/state) to check the Koii State.
 :::
 
 ### Returns
@@ -94,7 +94,7 @@ This wallet's private key needs to be loaded to retrieve the balance. This funct
 In the below code example, replace `<walletKeyLocation>` on line 4 with the local path to your wallet key file.
 :::
 
-```jsx
+```js
 const knode = require("@_koi/sdk/node");
 const ktools = new knode.Node();
 async function testGetKoiiBalance() {
@@ -109,7 +109,7 @@ testGetKoiiBalance();
 
 ### Example Code Output
 
-```
+```sh
 Initialized Koii Tools for true ownership and direct communication using version QA7AIFVx1KBBmzC7WUNhJbDsHlSJArUT0jWrhZMZPS8
 KOII balance of the given address is  7459.149283222933
 ```

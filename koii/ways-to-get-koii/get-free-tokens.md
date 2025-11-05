@@ -9,19 +9,19 @@ import ContentLink from "@site/src/components/contentLink";
 
 # Get Free Tokens
 
-![PoRT](./img/Get%20Free%20Tokens.svg)
+![PoRT](/img/koii/ways-to-get-koii/get-free-tokens.svg)
 
-While Koii is still in testnet, there are lots of ways to get involved, and the Koii Foundation wants to reward those who help us build the network. Koii compute tokens earned during the testnet phase will be transferred into your wallet upon mainnet launch.&#x20;
+While Koii is still in testnet, there are lots of ways to get involved, and the Koii Foundation wants to reward those who help us build the network. Koii compute tokens earned during the testnet phase will be transferred into your wallet upon mainnet launch.
 
 ### Testnet Airdop
 
-If you're a developer hoping to build on Koii, you can use the [CLI](/develop/category/koii-command-line-tool) to airdrop tokens to yourself so that you can deploy applications onto the network.&#x20;
+If you're a developer hoping to build on Koii, you can use the [CLI](/develop/category/koii-command-line-tool) to airdrop tokens to yourself so that you can deploy applications onto the network.
 
 **Note:** These tokens will not be transferred to mainnet after launch, but are great for trying things out!
 
 <ContentLink
   title='Using the Koii CLI'
-  link='/develop/category/koii-command-line-tool'
+  link='/docs/develop/category/koii-command-line-tool'
   iconType='copy'
 />
 
@@ -32,9 +32,9 @@ The Koii Foundation distributes free tokens when new users join. Each new user c
 Visit the faucet below to start building your Koii identity and get some free tokens.
 
 <ContentLink
-  title='Faucet | Koii Network'
-  link='https://faucet.koii.live/'
-  imageLink='https://faucet.koii.live/favicon.ico'
+  title='Faucet | Koii'
+  link='https://faucet.koii.network/'
+  imageLink='https://faucet.koii.network/favicon.ico'
 />
 
 ### Community Quests

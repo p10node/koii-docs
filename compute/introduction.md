@@ -4,9 +4,9 @@ image: img/thumbnail.png
 sidebar_label: Introduction
 ---
 
-![banner](./img/onboarding.svg)
+![banner](/img/compute/onboarding.svg)
 
-**Get Compute** is the starting point for compute buyers eager to run tasks on the Koii Network. Use the information below to determine if Koii is the **right fit for your computational needs.**
+**Get Compute** is the starting point for compute buyers eager to run tasks on the Koii network. Use the information below to determine if Koii is the **right fit for your computational needs.**
 
 ## Performance Metrics
 
@@ -35,10 +35,10 @@ sidebar_label: Introduction
 
 ## Supported Technology
 
-At Koii, we recognize the rapid evolution of technology, especially in the computational domain. Our network seamlessly integrates with popular technologies, ensuring compute buyers have access to familiar tools. Explore in-depth how the Koii Network supports:
+At Koii, we recognize the rapid evolution of technology, especially in the computational domain. Our network seamlessly integrates with popular technologies, ensuring compute buyers have access to familiar tools. Explore in-depth how Koii supports:
 
 - **Docker Images (coming soon):** Harness the power of containerization. Create, deploy, and run your tasks using Docker to ensure consistency across the network.
-  
+
 - **CUDA:** Accelerate your tasks by leveraging CUDA, a parallel computing platform and API model created by Nvidia. Ideal for compute-intensive workloads, especially in domains like AI and graphics.
 
 - **PyTorch:** Whether you're into machine learning, deep learning, or AI, our support for PyTorch ensures you can build and train your models on the Koii efficiently.
@@ -51,4 +51,4 @@ At the heart of Koii's developer toolkit is our [Developer API](/compute/develop
 
 ## FAQ
 
-For anything else please refer to our [Frequently Asked Questions (FAQ) page](/compute/FAQ) for anything else regarding task distribution, handling of requests, and much more.
+For anything else please refer to our [Frequently Asked Questions (FAQ) page](/faq/questions/) for anything else regarding task distribution, handling of requests, and much more.

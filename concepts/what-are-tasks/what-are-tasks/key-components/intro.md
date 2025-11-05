@@ -1,6 +1,6 @@
 ---
 title: Key Components
-description: When a task is created, there are two key components that must be uploaded to the Koii Network to initiate the task.
+description: When a task is created, there are two key components that must be uploaded to the Koii network to initiate the task.
 image: img/thumbnail.png
 sidebar_label: Key Components
 ---
@@ -9,29 +9,29 @@ import Description from "@site/src/components/description";
 
 # Key Components
 
-![banner](../../img/Key%20components.svg)
+![banner](/img/concepts/tasks/key-components.svg)
 
 <Description
   text="When a task is created, there are two key components that must be uploaded to
-  the Koii Network to initiate the task."
+  the Koii network to initiate the task."
 />
 
 ## Executable
 
 Every task is compiled into a single JavaScript executable file that contains all of the functions required to run the task. We go into detail throughout the tutorial. Three functions are required to be defined:
 
-- **Task Function** — This function contains the core logic of the task executable and submits the proof of the work done by participating nodes to K2. [Learn more](/develop/write-a-koii-task/task-development-guide/k2-task-template/task-function)
-- **Audit Function** — This function audits other participating nodes. [Learn More](/develop/write-a-koii-task/task-development-guide/k2-task-template/audit-function)
-- **Distribution Function** — This function creates the distribution list and submits it on-chain. [Learn More](/develop/write-a-koii-task/task-development-guide/k2-task-template/distribution-functions)
+- **Task Function** — This function contains the core logic of the task executable and submits the proof of the work done by participating nodes to K2.
+- **Audit Function** — This function audits other participating nodes.
+- **Distribution Function** — This function creates the distribution list and submits it on-chain.
 
 ## Metadata
 
 
-Task metadata is essential structured data that provides valuable information about a Koii task. By examining the metadata, node operators can gain a comprehensive understanding of a specific task. It is highly recommended to include key details such as the minimum computer specifications and reward structure within the metadata. This inclusion allows node operators to have a clear understanding of how rewards will be distributed, minimizing any potential confusion or uncertainty when executing your task. &#x20;
+Task metadata is essential structured data that provides valuable information about a Koii task. By examining the metadata, node operators can gain a comprehensive understanding of a specific task. It is highly recommended to include key details such as the minimum computer specifications and reward structure within the metadata. This inclusion allows node operators to have a clear understanding of how rewards will be distributed, minimizing any potential confusion or uncertainty when executing your task.
 
 Task metadata sample:
 
-```javascript
+```js
 {
   name: 'Sample Task',
   description: 'This a demo task',
@@ -56,7 +56,7 @@ Task metadata sample:
     "distribution mechanism": "every node gets fixed amount of reward every round",
     "stake dependence": "rewards do not depend on stake",
     "time dependence": "longer staking does not mean more reward"
- }  
+  }
 }
 ```
 

@@ -1,10 +1,49 @@
 import React from "react";
-import { getInvolvedLinks } from "@site/src/config/links-config";
 import { LinksSection } from "./links-section";
 import { SocialMediaLinks } from "./social-media-links";
 import { Policy } from "./policy";
 
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+
 export const KoiiFooter = () => {
+  const { siteConfig } = useDocusaurusContext();
+  const { baseUrl } = siteConfig.customFields as { baseUrl: string };
+
+  const getInvolvedLinks = [
+    {
+      label: "Run a Node",
+      url: `${baseUrl}/run-a-node/task-nodes/how-to-run-a-koii-node`,
+    },
+    {
+      label: "Get Finnie",
+      url: "https://chrome.google.com/webstore/detail/finnie/cjmkndjhnagcfbpiemnkdpomccnjblmj",
+      target: "_blank",
+    },
+    {
+      label: "Founders Program",
+      url: `${baseUrl}/koii/ways-to-get-koii/grants-program`,
+    },
+    {
+      label: "Download Koii Node",
+      url: "https://www.koii.network/nodes",
+      target: "_blank",
+    },
+    {
+      label: "Apply for a Grant",
+      url: "https://share.hsforms.com/16Xmwya9wQcClwavDXdtlJQc20dg",
+    },
+    {
+      label: "Whitepaper",
+      url: "https://www.koii.network/whitepaper.pdf",
+      target: "_blank",
+    },
+    {
+      label: "Litepaper",
+      url: `${baseUrl}/files/Koii Litepaper.pdf`,
+      target: "_blank",
+    },
+  ];
+
   return (
     <footer className="bg-[#353570] py-[2rem] text-white">
       <div className=" mx-[1.5rem] xl:mx-[6rem] bg-[rd] laptop-sm:pt-[0.5rem]">
@@ -12,7 +51,7 @@ export const KoiiFooter = () => {
           <div className="laptop-sm:flex justify-between gap-6 xl:gap-20">
             <div className="flex font-semibold mb-[1rem] laptop-sm:mb-0 ">
               <img
-                src="/img/finnie-koii-logo-white.svg"
+                src={`${baseUrl}/img/finnie-koii-logo-white.svg`}
                 alt="Koii logo"
                 width={50}
                 height={50}

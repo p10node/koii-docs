@@ -1,22 +1,32 @@
 import React, { useState } from "react";
 
-const DesktopNodeButton = () => {
-  const [isHovered, setIsHovered] = useState(false);
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
-  return (
-    <a
-      href="https://www.koii.network/node"
-      target="_blank"
-      className="cursor-pointer"
-    >
-      <img
-        src={isHovered ? "/img/buttonhover.svg" : "/img/buttondefault.svg"}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className="hoverAnimation"
-      />
-    </a>
-  );
+const DesktopNodeButton = () => {
+	const [isHovered, setIsHovered] = useState(false);
+	const { siteConfig } = useDocusaurusContext();
+	const { baseUrl } = siteConfig.customFields as { baseUrl: string };
+
+	return (
+		<a
+			href="https://www.koii.network/nodes"
+			target="_blank"
+			className="cursor-pointer"
+		>
+			<em>
+				<img
+					src={
+						isHovered
+							? `${baseUrl}/img/download-node-hover.svg`
+							: `${baseUrl}/img/download-node.svg`
+					}
+					onMouseEnter={() => setIsHovered(true)}
+					onMouseLeave={() => setIsHovered(false)}
+					className="hoverAnimation"
+				/>
+			</em>
+		</a>
+	);
 };
 
 export default DesktopNodeButton;

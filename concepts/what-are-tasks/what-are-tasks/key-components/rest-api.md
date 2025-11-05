@@ -1,6 +1,6 @@
 ---
 title: REST APIs
-description: When a task is created, there are two key components that must be uploaded to the Koii Network to initiate the task.
+description: When a task is created, there are two key components that must be uploaded to the Koii network to initiate the task.
 image: img/thumbnail.png
 sidebar_label: REST APIs
 ---
@@ -11,4 +11,4 @@ Regardless of the specific task being undertaken, the implementation of REST API
 
 By creating well-defined APIs, developers can ensure a structured and efficient flow of information between the client and server. This approach promotes modularity, scalability, and ease of maintenance, making it a crucial component of various projects within the Koii ecosystem.
 
-This concept is implemented in our [Hello World](/develop/write-a-koii-task/task-development-guide/task-structure/) and [Linktree tutorial](/develop/linktree/intro).
+This concept is implemented in our [EZSandbox](https://github.com/koii-network/ezsandbox) and [Linktree tutorial](/develop/linktree/intro).

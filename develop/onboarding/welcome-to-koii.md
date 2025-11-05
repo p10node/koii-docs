@@ -1,5 +1,5 @@
 ---
-title: Welcome to Koii
+title: 🎉 A Warm Welcome to You!
 description: Welcome to Koii! Here is an onboarding document for you to get started.
 image: img/thumbnail.png
 sidebar_label: Onboarding
@@ -10,33 +10,30 @@ import Tooltip from "@site/src/components/tooltip";
 import HiddenTreasure from "@site/src/components/hiddentreasure";
 import {CardSpecial, Card, CardsSpecial} from '@site/src/components/image_link';
 
-# 🎉 A Warm Welcome to You!
-
 We're thrilled to have you on board with Koii, an innovative leader in the realm of open-source AI Infrastructure. As a startup, we're on a fast-paced journey, driven by the dedication of our global team. Together, we're democratizing access to reliable and cost-effective computing power. Our platform not only empowers enterprises and startups but also rewards individuals worldwide for contributing their computing resources. The Koii ecosystem is built to foster development, offering grants to developers who integrate verified data and content into their products using our tools. This initiative supports the creation of new, fair content monetization models.
 
 ## You May Be Wondering...
 
 <CardsSpecial>
   <CardSpecial
+      title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
+      link="https://github.com/koii-network/ezsandbox"
+      svgName="createKoiiTask"
+      cardPerRow="3"
+    />
+  <CardSpecial
+      title="<h3><p>⚙️ <strong>Get a Koii wallet</strong></p><h3>"
+      link="/develop/category/koii-command-line-tool"
+      svgName="koiiCLI"
+      cardPerRow="3"
+  />
+  <CardSpecial
       title="<h3><p>🛠️ <strong>Koii JavaScript API</strong></p><h3>"
       link="/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk"
       svgName="koiiJSAPI"
       cardPerRow="3"
     />
-    <CardSpecial
-      title="<h3><p>⚙️ <strong>Koii CLI</strong></p><h3>"
-      link="/develop/category/koii-command-line-tool"
-      svgName="koiiCLI"
-      cardPerRow="3"
-    />
-  <Card
-      title="<h3><p>💡 <strong>Create a Koii Task</strong></p><h3>"
-      link="/develop/write-a-koii-task/task-development-guide/"
-      svgName="createKoiiTask"
-      cardPerRow="3"
-    />
 </CardsSpecial>
-
 
 ### 🌐 Getting to Know the Basics
 
@@ -80,13 +77,13 @@ Finnie stands at the heart of our network, enabling you to manage and transact w
 
 K2 is crucial for transaction speeds, serving as a message hub within our network and leveraging technologies like Solana's Proof of History. It's essential for managing KOII tokens and integrates native programs for off-chain computing and content-centric applications.
 
-[Discover K2's Capabilities](https://docs.koii.network/concepts/settlement-layer/k2-tick-tock-fast-blocks)
+[Discover K2's Capabilities](/concepts/settlement-layer/k2-tick-tock-fast-blocks)
 
 #### **Koii SDK: Develop with Ease**
 
 The Koii SDK is a comprehensive toolkit for developers, enabling access to the functionalities of our K2 network. It's built to facilitate easy integration and interaction with our platform's unique features.
 
-[Explore the Koii SDK](https://docs.koii.network/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk)
+[Explore the Koii SDK](/develop/koii-software-toolkit-sdk/what-is-the-koii-sdk)
 
 #### **Koii Node: Powering the Network**
 
@@ -130,12 +127,10 @@ This symbiotic relationship between supply and demand not only fuels the Koii ec
 
 We believe the best way to learn is by doing. That's why we invite you to tackle a small, introductory task. This guided tutorial will walk you through the basics, giving you a solid foundation in the Koii ecosystem and its functionalities.
 
-[Start Your First Koii Task Here](/develop/write-a-koii-task/task-development-guide/)
+[Start Your First Koii Task Here](https://github.com/koii-network/ezsandbox)
 
 Dive in and explore the possibilities that Koii offers. This is your opportunity to put theory into practice and begin shaping the future of decentralized content and computing power distribution. Welcome to the team, and enjoy your journey with Koii!
 
 ### 🚀 Embrace Your Journey
 
 As a new member of Koii, you're stepping into a world of innovation and opportunity. We're excited to see your contributions and support your growth in our ecosystem. Welcome to the team—let's make a lasting impact together!
-
-

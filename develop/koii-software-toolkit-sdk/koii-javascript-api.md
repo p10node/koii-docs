@@ -17,26 +17,18 @@ To get started with the installation process and understand how to use the KOII 
 
 You can install the API using one of the following methods:
 
-#### npm
-
-```
-$ npm install --save @_koi/web3.js
-```
-
-#### Yarn
-
-```
-$ yarn add @_koi/web3.js
+```sh
+npm install --save @_koii/web3.js
 ```
 
 #### Browser bundle
 
-```jsx
+```html
 <!-- Development (un-minified) -->
-<script src="https://unpkg.com/@_koi/web3.js@latest/lib/index.iife.js"></script>
+<script src="https://unpkg.com/@_koii/web3.js@latest/lib/index.iife.js"></script>
 
 <!-- Production (minified) -->
-<script src="https://unpkg.com/@_koi/web3.js@latest/lib/index.iife.min.js"></script>
+<script src="https://unpkg.com/@_koii/web3.js@latest/lib/index.iife.min.js"></script>
 ```
 
 ### Usage
@@ -45,21 +37,21 @@ The KOII JavaScript API can be used in various ways based on your development en
 
 #### JavaScript
 
-```jsx
-const koiiWeb3 = require("@_koi/web3.js");
+```js
+const koiiWeb3 = require("@_koii/web3.js");
 console.log(koiiWeb3);
 ```
 
 #### ES6
 
-```jsx
-import * as koiiWeb3 from "@_koi/web3.js";
+```js
+import * as koiiWeb3 from "@_koii/web3.js";
 console.log(koiiWeb3);
 ```
 
 #### Browser bundle
 
-```jsx
+```js
 // `koiiWeb3` is provided in the global namespace by the `koiiWeb3.min.js` script bundle.
 console.log(koiiWeb3);
 ```
@@ -77,8 +69,8 @@ performance measurements described in this project are done with the KOII Networ
 It is up to the reader to check and validate their accuracy and truthfulness.
 Furthermore, nothing in this project constitutes a solicitation for investment.
 
-Any content produced by SF or developer resources that SF provides are for educational and
-inspiration purposes only. SF does not encourage, induce or sanction the deployment,
+Any content produced by Koii Foundation (KF) or developer resources that KF provides are for educational and
+inspiration purposes only. KF does not encourage, induce or sanction the deployment,
 integration or use of any such applications (including the code comprising the KOII blockchain protocol)
 in violation of applicable laws or regulations and hereby prohibits any such deployment, integration or use.
 This includes the use of any such applications by the reader
